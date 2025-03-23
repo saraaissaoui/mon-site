@@ -1,0 +1,491 @@
+/* Fonts et base */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: white; /* Texte bien blanc */
+    font-size: 1.5em; /* Augmente la taille */
+    font-weight: bold; /* Texte plus visible */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Ajoute une ombre pour un meilleur contraste */
+}
+
+
+nav {
+    text-align: center;
+    background-color: #222;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Lien LinkedIn */
+a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d4af37;
+}
+
+/* Compétences */
+#skills ul {
+    list-style-type: none; /* Retire les puces */
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+    text-align: left; /* Alignement à gauche */
+    max-width: 800px;
+    margin: auto;
+}
+
+#skills ul li {
+    margin-bottom: 20px; /* Espacement entre les éléments */
+    position: relative;
+    padding-left: 30px; /* Décalage des éléments */
+}
+
+#skills ul li::before {
+    content: '•'; /* Utilisation d'un cercle pour remplacer la puce */
+    position: absolute;
+    left: 0;
+    font-size: 2em; /* Taille du point */
+    color: #d4af37; /* Couleur or pour les points */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Langues */
+#languages {
+    background-color: #fff; /* Fond blanc */
+    padding: 40px;
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 2px solid #333; /* Bordure noire */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Légère ombre pour effet 3D */
+    text-align: left; /* Aligner tout le texte à gauche */
+}
+
+#languages h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333; /* Bordure sous le titre */
+    padding-bottom: 10px;
+}
+
+#languages ul {
+    list-style-type: none; /* Retire les puces par défaut */
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+#languages ul li {
+    margin-bottom: 10px; /* Espacement entre les éléments */
+    position: relative;
+    padding-left: 30px; /* Décalage des éléments */
+}
+
+#languages ul li::before {
+    content: '•'; /* Utilisation d'un cercle pour remplacer la puce */
+    position: absolute;
+    left: 0;
+    font-size: 2em; /* Taille du point */
+    color: #d4af37; /* Couleur or pour les points */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Section Projets */
+#projects {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#projects h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Ajouter de la couleur aux titres des projets */
+#projects h2 {
+    color: #d4af37; /* Couleur dorée */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Effet de survol sur les titres des projets */
+#projects h2:hover {
+    color: #ff6f61; /* Couleur rouge orangé lorsqu'on survole */
+    cursor: pointer;
+}
+
+/* Section pour les détails du projet */
+#projects h3 {
+    font-size: 1.5em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#projects p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Liste des compétences */
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#projects ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+}
+
+#projects ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    font-size: 1.8em;
+    color: #d4af37;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Section Footer avec les images */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-gallery .image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Media Queries pour un affichage mobile-friendly */
+@media (max-width: 768px) {
+    #projects {
+        padding: 20px;
+    }
+
+    .image-gallery .image {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Section Expériences */
+#experiences {
+    padding: 50px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#experiences h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Titre des expériences */
+section h2 {
+    font-size: 2em;
+    color: #d4af37; /* Couleur dorée pour un effet élégant */
+    font-weight: bold;
+    margin-top: 30px;
+    transition: color 0.3s ease;  /* Transition pour l'effet de survol */
+}
+
+/* Effet de survol sur le titre des expériences */
+section h2:hover {
+    color: #ff6f61; /* Couleur orangée lors du survol */
+    cursor: pointer;
+}
+
+/* Section des détails de l'expérience */
+section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Ajouter des bordures et de l'espace entre les sections */
+section {
+    border-bottom: 2px solid #e1e1e1; /* Ligne sous chaque section */
+    padding-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ff6f61; /* Changement de couleur sur le lien */
+    text-decoration: underline;
+}
+
+/* Contact */
+#contact {
+    background-color: #f1f1f1; /* Fond clair */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+#contact a {
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0077b5;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+#contact a:hover {
+    background-color: #005e8e; /* Couleur au survol */
+}
+
+/* Style des icônes de contact */
+#contact .icon {
+    font-size: 2em;
+    margin-right: 10px;
+    color: #0077b5;
+    transition: color 0.3s;
+}
+
+#contact .icon:hover {
+    color: #ff6f61; /* Couleur au survol */
+}
+
+#contact .contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#contact .contact-item p {
+    font-size: 1.2em;
+    color: #555;
+    margin-left: 10px;
+}
+
+/* Image galerie */
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.image-gallery .image {
+    width: 48%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery .image:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6f61;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: black; /* Fond pour l'effet visuel */
+    height: 500px; /* Ajuste selon la taille de tes images */
+}
+
+.carousel-track {
+    display: flex;
+    width: 200%; /* Doit être au moins le double des images */
+    animation: scroll 10s linear infinite;
+}
+
+.carousel img {
+    width: 50%; /* Ajuste si tu veux plus d'images visibles en même temps */
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
